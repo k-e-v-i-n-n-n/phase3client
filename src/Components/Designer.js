@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from "react";
 
 
-const Designer = ({id, name, designers, onClick}) => {
+const Designer = ({id, name, designers, showItems}) => {
 
 
   
@@ -9,10 +9,11 @@ const Designer = ({id, name, designers, onClick}) => {
 
     return (
 
-    <div className={"designer"}>
+    <div className={"designerName"} >
 
     
-            <h3 id={id} onClick={onClick} >{name}</h3>
+            <h3 id={id} name={name} onClick={showItems}  className={"designer"}>{name}</h3>
+            {/* <button className={"designerDelete"}>x</button> */}
 
     
 

@@ -1,11 +1,19 @@
+#root {
+  position: relative;
+  /* margin: 0 auto; */
+  height: 3000px;
+}
+
 body {
-  margin: 0;
+  /* position: relative; */
+  margin: 0px auto;
   font-family: "Avenir";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Avenir";
-  display: flex;
+  /* display: flex;
   justify-content: center;
+} */
 }
 
 /* code {
@@ -17,14 +25,16 @@ body {
 
 .nav {
   position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  /* text-align: center; */
-  height: 75px;
-  width: 1084px;
-  left:250px;
+  margin: auto;
+  text-align: center;
+
+  margin-bottom: 0px;
+  margin-left: 364.5px;
+  margin-right: 364.5px;
+  margin-top: 0px;
+
+
+  width: 1000px;
   
   border-color: black;
   background-color: rgb(255, 255, 255);
@@ -40,9 +50,6 @@ body {
     text-align: center;
 }
 
-/* .nav-item:hover {
-  color: rgb(143, 143, 143);
-} */
 
 /* Designer Left Column Styling */
 
@@ -52,16 +59,34 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center; 
+
   position: fixed;
+
+  
+
   left:50px;
   top: 200px;
   width: 200px;
 
+  border-width: 10px;
+  border-color: black;
+ 
+
   
 }
 
-.designer:hover {
-  color: rgb(143, 143, 143);
+.designerDelete{
+
+  visibility: hidden;
+}
+
+.designer:hover{
+  color: rgb(143, 143, 143); 
+}
+
+.designerName:hover + .designerDelete {
+ visibility: visible;
+
 }
 
 /* Designer Items Display */
@@ -69,14 +94,25 @@ body {
 .designerItemsDisplay {
 
     position: absolute;
-    margin: auto;
+    /* margin: auto; */
+
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    left:200px;
-    top: 200px;
-    width: 1200px;
-    height: 3000px;
+    align-content: flex-start;
+
+    margin-bottom: 0px;
+    margin-left: 364.5px;
+    margin-right: 364.5px;
+    margin-top: 220px;
+    
+    /* left:100px; */
+    /* top: 300px; */
+    width: 1000px;
+    gap: 60px;
+
+    /* height: 3000px; */
 
 
 }
@@ -85,14 +121,25 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center; 
 
+  position: relative;
+
   
-  border-width: 5px;
-  top: 200px;
+  /* border-width: 5px;
+  top: 200px; */
   width: 250px;
   height: 250px;
+
+  
+
+}
+
+.editButtons {
+
+  position: absolute;
+  top: 225px ;
 
 }
 

@@ -2,14 +2,14 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 
 
-function Nav(){
+function Nav({currentDesigner}){
 
 
     return(
 
         <div className='nav'>
             <h1>échelle</h1>
-            {/* <NavLink exact to='designers' className='nav-items'>Designers</NavLink> */}
+            <h4>{currentDesigner}</h4>
         
         </div>
     )
